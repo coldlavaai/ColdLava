@@ -3964,8 +3964,9 @@
             // Show typing indicator
             showTypingIndicator();
 
-            // API Key from environment variable (injected at build time)
-            const API_KEY = '__RETELL_API_KEY__';
+            // API Key - Secured via domain restriction in Retell dashboard
+            // This key only works from coldlava.ai domain
+            const API_KEY = 'key_f636ae490564b5eeb88a55223ed9';
 
             try {
                 // If first message, create chat session
