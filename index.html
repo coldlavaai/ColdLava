@@ -2786,10 +2786,20 @@
 
     <!-- Retell AI Widget Script - Hidden default button -->
     <style>
-        /* Hide the default Retell widget button */
+        /* Hide the default Retell widget button and shadow DOM fab */
         [data-retell-button],
         button[style*="position: fixed"][style*="bottom"][style*="right"] {
             display: none !important;
+        }
+
+        /* Hide any div that might contain the shadow DOM widget */
+        body > div:not([class]):not([id]) {
+            display: none !important;
+        }
+
+        /* But keep our widget visible */
+        .cold-lava-widget {
+            display: block !important;
         }
     </style>
     <script
