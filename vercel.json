@@ -1,18 +1,8 @@
 {
   "functions": {
-    "api/chat.js": {
-      "memory": 1024,
-      "maxDuration": 10
-    },
-    "api/retell-web-call.js": {
+    "api/**/*.js": {
       "memory": 1024,
       "maxDuration": 10
     }
-  },
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/$1"
-    }
-  ]
+  }
 }
