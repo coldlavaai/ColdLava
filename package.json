@@ -1,0 +1,7 @@
+{
+  "name": "cold-lava-homepage",
+  "version": "1.0.0",
+  "description": "Cold Lava AI Homepage with Chat Widget",
+  "private": true,
+  "type": "module"
+}
