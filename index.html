@@ -369,12 +369,12 @@
 
         /* Ultra Premium Hero Section */
         .hero {
-            min-height: 100vh;
+            min-height: auto;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 8rem 2rem 6rem;
+            padding: 2rem 2rem 2rem;
             position: relative;
             background: transparent;
         }
@@ -385,21 +385,21 @@
         }
 
         .hero-subtitle {
-            font-size: 1.1rem;
+            font-size: 0.95rem;
             color: var(--accent-blue);
             font-weight: 700;
             letter-spacing: 4px;
             text-transform: uppercase;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             opacity: 0;
             animation: luxuryFadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.2s forwards;
             text-shadow: 0 0 20px rgba(2, 187, 212, 0.5);
         }
 
         .hero-title {
-            font-size: 5.5rem;
+            font-size: 3rem;
             font-weight: 900;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             color: var(--text-light);
             text-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
             opacity: 0;
@@ -419,9 +419,9 @@
         }
 
         .hero-description {
-            font-size: 1.4rem;
+            font-size: 1rem;
             color: var(--text-gray);
-            margin-bottom: 4rem;
+            margin-bottom: 1.5rem;
             font-weight: 600;
             letter-spacing: 3px;
             text-transform: uppercase;
@@ -431,18 +431,18 @@
 
         .hero-cta {
             display: flex;
-            gap: 1.5rem;
+            gap: 1rem;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
             opacity: 0;
             animation: luxuryFadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.8s forwards;
-            margin-bottom: 6rem;
+            margin-bottom: 3rem;
         }
 
         .cta-button {
-            padding: 1rem 2.5rem;
-            font-size: 1.1rem;
+            padding: 0.7rem 1.8rem;
+            font-size: 0.95rem;
             font-weight: 700;
             border: none;
             border-radius: 50px;
@@ -502,26 +502,22 @@
         }
 
         .services-wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            justify-content: center;
-            align-items: stretch;
-            max-width: 1400px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
         .service-preview-card {
-            flex: 1 1 320px;
-            max-width: 380px;
-            padding: 2.5rem;
-            border-radius: 30px;
+            padding: 1.8rem;
+            border-radius: 24px;
             background: rgba(255, 255, 255, 0.02);
             backdrop-filter: blur(25px);
             -webkit-backdrop-filter: blur(25px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             color: white;
-            text-align: center;
+            text-align: left;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -529,6 +525,7 @@
             position: relative;
             overflow: hidden;
             cursor: pointer;
+            min-height: 280px;
         }
 
         .service-preview-card::before {
@@ -577,9 +574,19 @@
             border-color: var(--accent-purple);
         }
 
+        .websites-preview-card {
+            box-shadow: 0 0 40px rgba(0, 255, 127, 0.3);
+        }
+
+        .websites-preview-card:hover {
+            transform: translateY(-15px) rotate(1.5deg) scale(1.03);
+            box-shadow: 0 0 60px rgba(0, 255, 127, 0.5), 0 30px 80px rgba(0, 255, 127, 0.3);
+            border-color: rgba(0, 255, 127, 0.8);
+        }
+
         .service-preview-icon {
-            width: 50px;
-            margin-bottom: 1.5rem;
+            width: 40px;
+            margin-bottom: 1rem;
             margin-left: auto;
             margin-right: auto;
             display: block;
@@ -606,18 +613,23 @@
             transform: scale(1.1) rotate(3deg);
         }
 
+        .websites-preview-card:hover .service-preview-icon {
+            filter: drop-shadow(0 0 25px rgba(0, 255, 127, 0.8));
+            transform: scale(1.1) rotate(-4deg);
+        }
+
         .service-preview-title {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: 800;
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.6rem;
             transition: all 0.4s ease;
         }
 
         .service-preview-subtitle {
-            font-size: 1rem;
-            line-height: 1.7;
+            font-size: 0.9rem;
+            line-height: 1.5;
             color: var(--text-gray);
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
             font-weight: 500;
         }
 
@@ -680,6 +692,12 @@
             background: linear-gradient(135deg, #8a2be2, #ff44cc);
             color: var(--text-light);
             box-shadow: 0 8px 32px rgba(138, 43, 226, 0.4);
+        }
+
+        .websites-preview-cta {
+            background: linear-gradient(135deg, #00ff7f, #00d9ff);
+            color: var(--primary-bg);
+            box-shadow: 0 8px 32px rgba(0, 255, 127, 0.4);
         }
 
         .service-preview-cta:hover {
@@ -1556,6 +1574,305 @@
 
         .strategy-card p:last-child {
             margin-bottom: 0;
+        }
+
+        /* Websites Section */
+        .websites {
+            padding: 8rem 2rem;
+            background: transparent;
+            position: relative;
+        }
+
+        .websites-hero {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 6rem auto;
+        }
+
+        .websites-logo {
+            width: 80px;
+            margin-bottom: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            filter: drop-shadow(0 0 30px rgba(0, 255, 127, 0.6));
+        }
+
+        .websites-title {
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #00ff7f, #00d9ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+
+        .websites-subtitle {
+            font-size: 1.8rem;
+            color: var(--text-gray);
+            margin-bottom: 2rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .websites-description {
+            font-size: 1.15rem;
+            color: var(--text-gray);
+            line-height: 1.8;
+            font-weight: 500;
+        }
+
+        .websites-features {
+            max-width: 1200px;
+            margin: 0 auto 6rem;
+        }
+
+        .websites-features-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 3rem;
+            color: var(--text-light);
+        }
+
+        .websites-features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .websites-feature-card {
+            padding: 2rem;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 255, 127, 0.2);
+            transition: all 0.4s ease;
+            text-align: center;
+        }
+
+        .websites-feature-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(0, 255, 127, 0.5);
+            box-shadow: 0 20px 60px rgba(0, 255, 127, 0.2);
+        }
+
+        .websites-feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .websites-feature-card h4 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            color: var(--text-light);
+        }
+
+        .websites-feature-card p {
+            color: var(--text-gray);
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .websites-examples {
+            max-width: 1200px;
+            margin: 0 auto 6rem;
+        }
+
+        .websites-examples-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+
+        .websites-examples-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            margin-bottom: 3rem;
+        }
+
+        .websites-examples-grid {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .websites-example-card {
+            max-width: 900px;
+            padding: 2rem;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 255, 127, 0.2);
+            transition: all 0.4s ease;
+        }
+
+        .websites-example-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(0, 255, 127, 0.5);
+            box-shadow: 0 20px 60px rgba(0, 255, 127, 0.3);
+        }
+
+        .websites-example-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(0, 255, 127, 0.1);
+        }
+
+        .websites-viewport-controls {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0 1rem;
+        }
+
+        .viewport-btn {
+            padding: 0.8rem 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(0, 255, 127, 0.2);
+            border-radius: 10px;
+            color: var(--text-gray);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .viewport-btn:hover {
+            background: rgba(0, 255, 127, 0.1);
+            border-color: rgba(0, 255, 127, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .viewport-btn.active {
+            background: rgba(0, 255, 127, 0.2);
+            border-color: #00ff7f;
+            color: #00ff7f;
+        }
+
+        .viewport-icon {
+            font-size: 1.2rem;
+        }
+
+        .websites-iframe-container {
+            width: 100%;
+            max-width: 1400px;
+            height: 800px;
+            border-radius: 12px;
+            margin: 2rem auto;
+            border: 2px solid rgba(0, 255, 127, 0.2);
+            overflow: auto;
+            background: #000;
+            box-shadow: 0 10px 40px rgba(0, 255, 127, 0.2);
+            transition: all 0.5s ease;
+        }
+
+        .websites-iframe-container.mobile-view {
+            max-width: 375px;
+            height: 667px;
+        }
+
+        .websites-live-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+        .websites-live-demo {
+            max-width: 100%;
+        }
+
+        .websites-example-card h4 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            color: var(--text-light);
+        }
+
+        .websites-example-card p {
+            color: var(--text-gray);
+            line-height: 1.6;
+            margin-bottom: 1.2rem;
+        }
+
+        .websites-example-features {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+            text-align: left;
+        }
+
+        .websites-example-features li {
+            color: var(--text-gray);
+            line-height: 2;
+            padding-left: 0.5rem;
+        }
+
+        .websites-example-link {
+            display: inline-block;
+            color: #00ff7f;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .websites-example-link:hover {
+            color: #00d9ff;
+            transform: translateX(5px);
+        }
+
+        .websites-cta {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            border-radius: 30px;
+            background: rgba(0, 255, 127, 0.05);
+            border: 1px solid rgba(0, 255, 127, 0.2);
+        }
+
+        .websites-cta h3 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+
+        .websites-cta p {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            margin-bottom: 2rem;
+        }
+
+        .websites-cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #00ff7f, #00d9ff);
+            color: var(--primary-bg);
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 32px rgba(0, 255, 127, 0.3);
+        }
+
+        .websites-cta-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 20px 60px rgba(0, 255, 127, 0.5);
         }
 
         /* Footer */
@@ -3169,26 +3486,56 @@
                     <div class="service-preview-card reactivation-preview-card" onclick="smoothScrollTo('#reactivation')">
                         <div>
                             <img src="https://cdn-icons-png.flaticon.com/512/942/942751.png" alt="Reconnect Icon" class="service-preview-icon">
-                            
+
                             <h3 class="service-preview-title">Database Reactivation</h3>
-                            
+
                             <p class="service-preview-subtitle">
                                 You paid for the leads. Now let them pay you back.
                             </p>
-                            
+
                             <p class="service-preview-description">
                                 We reconnect with cold, ignored or abandoned leads using human-sounding AI and proven psychology, turning lost data into booked conversations.
                             </p>
-                            
+
                             <ul class="service-preview-features">
                                 <li>⚡ No win, no fee options</li>
                                 <li>⚡ Solar, finance, wellness & more</li>
                                 <li>⚡ Converts old leads into deals</li>
                             </ul>
                         </div>
-                        
+
                         <span class="service-preview-cta reactivation-preview-cta">
                             👉 Revive Your Old Leads
+                        </span>
+                    </div>
+
+                    <!-- AI-Ready Websites Preview -->
+                    <div class="service-preview-card websites-preview-card" onclick="smoothScrollTo('#websites')">
+                        <div>
+                            <img src="https://cdn-icons-png.flaticon.com/512/1183/1183723.png" alt="Website Icon" class="service-preview-icon">
+
+                            <h3 class="service-preview-title">AI-Ready Websites</h3>
+
+                            <p class="service-preview-subtitle">
+                                Beautiful, fast websites built for AI integration from day one.
+                            </p>
+
+                            <p class="service-preview-description">
+                                Modern, responsive websites designed with AI capabilities baked in. From landing pages to full platforms, we build sites that convert and integrate seamlessly with your AI agents.
+                            </p>
+
+                            <ul class="service-preview-features">
+                                <li>✨ Glassmorphism effects & modern UI design</li>
+                                <li>🎨 Custom brand identity (not from templates)</li>
+                                <li>🤖 Integrated Cold Lava custom AI widget</li>
+                                <li>💫 Parallax scrolling & smooth animations</li>
+                                <li>🔄 Interactive hover effects throughout</li>
+                                <li>⚡ Lightning-fast & SEO optimized</li>
+                            </ul>
+                        </div>
+
+                        <span class="service-preview-cta websites-preview-cta">
+                            👉 See Our Websites
                         </span>
                     </div>
                 </div>
@@ -3525,6 +3872,113 @@
         </div>
     </section>
 
+    <!-- AI-Ready Websites Section -->
+    <section id="websites" class="websites">
+        <div class="websites-hero">
+            <img src="https://cdn.shopify.com/s/files/1/0951/6141/8067/files/LAVA_1.png?v=1753207208" alt="Cold Lava Logo" class="websites-logo fade-in">
+
+            <h2 class="websites-title fade-in">AI-Ready Websites</h2>
+            <p class="websites-subtitle fade-in">
+                Beautiful, fast, and built for intelligent automation from day one.
+            </p>
+
+            <p class="websites-description fade-in">
+                Your website isn't just a brochure—it's a conversion engine. We build modern, responsive websites that look stunning, load instantly, and integrate seamlessly with AI agents, chat widgets, and automation workflows. Whether you need a landing page, full website, or custom platform, we create experiences that convert visitors into customers.
+            </p>
+        </div>
+
+        <div class="websites-features">
+            <h3 class="websites-features-title fade-in">What Makes Our Websites Different</h3>
+
+            <div class="websites-features-grid">
+                <div class="websites-feature-card fade-in">
+                    <div class="websites-feature-icon">🎨</div>
+                    <h4>Custom Design</h4>
+                    <p>Unique, on-brand designs that reflect your business and captivate your audience—no templates, no shortcuts.</p>
+                </div>
+
+                <div class="websites-feature-card fade-in">
+                    <div class="websites-feature-icon">🤖</div>
+                    <h4>Custom Cold Lava AI Widget</h4>
+                    <p>Our bespoke AI widgets (voice & chat) integrate seamlessly into your site—built from scratch for your brand, not off-the-shelf.</p>
+                </div>
+
+                <div class="websites-feature-card fade-in">
+                    <div class="websites-feature-icon">⚡</div>
+                    <h4>Lightning Fast</h4>
+                    <p>Optimized for speed and performance. Fast load times mean better user experience and higher conversions.</p>
+                </div>
+
+                <div class="websites-feature-card fade-in">
+                    <div class="websites-feature-icon">📱</div>
+                    <h4>Mobile-First</h4>
+                    <p>Responsive design that looks perfect on every device—phone, tablet, or desktop.</p>
+                </div>
+
+                <div class="websites-feature-card fade-in">
+                    <div class="websites-feature-icon">🔍</div>
+                    <h4>SEO Optimized</h4>
+                    <p>Built with search engines in mind—proper structure, meta tags, and performance for better rankings.</p>
+                </div>
+
+                <div class="websites-feature-card fade-in">
+                    <div class="websites-feature-icon">🔄</div>
+                    <h4>Easy to Update</h4>
+                    <p>Simple content management—update text, images, and pages without needing a developer.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="websites-examples">
+            <h3 class="websites-examples-title fade-in">Recent Projects</h3>
+            <p class="websites-examples-subtitle fade-in">Interact with a live demo below (scroll, hover, click around!)</p>
+
+            <div class="websites-examples-grid">
+                <div class="websites-example-card websites-live-demo fade-in">
+                    <h4>Greenstar Solar</h4>
+                    <p>Complete redesign for UK solar panel company featuring:</p>
+                    <ul class="websites-example-features">
+                        <li>✨ Glassmorphism effects & frosted glass UI</li>
+                        <li>🎨 Custom brand identity (migrated from WordPress)</li>
+                        <li>🤖 Integrated Cold Lava custom AI chat widget</li>
+                        <li>⚡ Parallax scrolling & reactive background effects</li>
+                        <li>💫 Advanced hover animations & smooth transitions</li>
+                        <li>📱 Fully responsive & mobile-optimized</li>
+                        <li>🚀 Next.js + Sanity CMS (lightning fast)</li>
+                    </ul>
+
+                    <div class="websites-viewport-controls">
+                        <button class="viewport-btn active" data-viewport="desktop">
+                            <span class="viewport-icon">🖥️</span> Desktop
+                        </button>
+                        <button class="viewport-btn" data-viewport="mobile">
+                            <span class="viewport-icon">📱</span> Mobile
+                        </button>
+                    </div>
+
+                    <div class="websites-iframe-container" id="websitesIframeContainer">
+                        <iframe
+                            src="https://greenstarwebsiteupgrade.vercel.app/?hideConsent=true"
+                            title="Greenstar Solar Website - Live Demo"
+                            class="websites-live-iframe"
+                            loading="lazy"
+                        ></iframe>
+                    </div>
+
+                    <a href="https://greenstarwebsiteupgrade.vercel.app/" target="_blank" class="websites-example-link">Open in New Tab →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="websites-cta fade-in">
+            <h3>Ready to Build Your AI-Ready Website?</h3>
+            <p>Let's create something that converts</p>
+            <a href="https://cal.com/coldlava/discovery-call" target="_blank" class="websites-cta-button">
+                Book a Discovery Call
+            </a>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer id="contact" class="footer">
         <div class="footer-logo">
@@ -3565,6 +4019,27 @@
 
         // Dynamic year for footer
         document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Viewport Toggle for Website Preview
+        const viewportButtons = document.querySelectorAll('.viewport-btn');
+        const iframeContainer = document.getElementById('websitesIframeContainer');
+
+        viewportButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active from all buttons
+                viewportButtons.forEach(b => b.classList.remove('active'));
+                // Add active to clicked button
+                btn.classList.add('active');
+
+                // Toggle iframe container class
+                const viewport = btn.getAttribute('data-viewport');
+                if (viewport === 'mobile') {
+                    iframeContainer.classList.add('mobile-view');
+                } else {
+                    iframeContainer.classList.remove('mobile-view');
+                }
+            });
+        });
 
         // Luxury Cursor Removed - Better Performance
 
