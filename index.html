@@ -1896,6 +1896,244 @@
             box-shadow: 0 20px 60px rgba(0, 255, 127, 0.5);
         }
 
+        /* Featured Testimonial (Hero) */
+        .featured-testimonial {
+            padding: 4rem 2rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .featured-testimonial-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            border: 2px solid rgba(0, 182, 122, 0.3);
+            border-radius: 30px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0, 182, 122, 0.2);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .featured-testimonial-card:hover {
+            border-color: #00b67a;
+            box-shadow: 0 25px 70px rgba(0, 182, 122, 0.35);
+            transform: translateY(-5px);
+        }
+
+        .featured-testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .featured-trustpilot-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(0, 182, 122, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            border: 1px solid rgba(0, 182, 122, 0.3);
+        }
+
+        .featured-trustpilot-badge span {
+            font-weight: 700;
+            color: #00b67a;
+            font-size: 0.95rem;
+        }
+
+        .featured-testimonial-stars {
+            display: flex;
+            gap: 0.2rem;
+        }
+
+        .featured-star {
+            width: 18px;
+            height: 18px;
+            fill: #00b67a;
+        }
+
+        .featured-testimonial-text {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            color: var(--text-light);
+            font-weight: 500;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .featured-testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            padding-top: 2rem;
+        }
+
+        .featured-author-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .featured-author-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-light);
+            margin-bottom: 0.3rem;
+        }
+
+        .featured-author-date {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .featured-trustpilot-logo {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .featured-trustpilot-logo a {
+            color: #00b67a;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .featured-trustpilot-logo a:hover {
+            text-decoration: underline;
+        }
+
+        /* Testimonials Section */
+        .testimonials-section {
+            padding: 6rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .testimonials-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .trustpilot-score {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .trustpilot-score span {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-light);
+        }
+
+        .trustpilot-stars {
+            display: flex;
+            gap: 0.3rem;
+        }
+
+        .trustpilot-star {
+            width: 28px;
+            height: 28px;
+            fill: #00b67a;
+            filter: drop-shadow(0 0 8px rgba(0, 182, 122, 0.4));
+        }
+
+        .trustpilot-link {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .trustpilot-link:hover {
+            color: #00b67a;
+            text-decoration: underline;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 25px;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            border-color: #00b67a;
+            box-shadow: 0 15px 50px rgba(0, 182, 122, 0.3);
+        }
+
+        .testimonial-stars {
+            display: flex;
+            gap: 0.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-star {
+            width: 20px;
+            height: 20px;
+            fill: #00b67a;
+        }
+
+        .testimonial-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-gray);
+            margin-bottom: 2rem;
+            flex-grow: 1;
+        }
+
+        .testimonial-author {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1.5rem;
+            margin-top: auto;
+        }
+
+        .testimonial-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-light);
+            margin-bottom: 0.3rem;
+        }
+
+        .testimonial-date {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .trustpilot-attribution {
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .trustpilot-attribution a {
+            color: #00b67a;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .trustpilot-attribution a:hover {
+            text-decoration: underline;
+        }
+
         /* Footer */
         .footer {
             background: rgba(10, 10, 51, 0.95);
@@ -2522,6 +2760,106 @@
                 width: 45px !important;
                 height: auto !important;
                 margin-bottom: 1rem;
+            }
+
+            /* Featured Testimonial mobile */
+            .featured-testimonial {
+                padding: 2rem 1rem 1rem;
+            }
+
+            .featured-testimonial-card {
+                padding: 1.5rem;
+                border-radius: 20px;
+            }
+
+            .featured-testimonial-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.75rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .featured-testimonial-text {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+
+            .featured-testimonial-author {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+                padding-top: 1.5rem;
+            }
+
+            .featured-author-name {
+                font-size: 1.1rem;
+            }
+
+            .featured-star {
+                width: 16px;
+                height: 16px;
+            }
+
+            /* Testimonials Section mobile */
+            .testimonials-section {
+                padding: 3rem 1rem;
+            }
+
+            .testimonials-header {
+                margin-bottom: 2rem;
+            }
+
+            .trustpilot-score {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .trustpilot-score span {
+                font-size: 1.2rem;
+            }
+
+            .trustpilot-star {
+                width: 24px;
+                height: 24px;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                margin-top: 2rem;
+            }
+
+            .testimonial-card {
+                padding: 1.5rem;
+                border-radius: 20px;
+            }
+
+            .testimonial-text {
+                font-size: 0.95rem;
+                line-height: 1.6;
+                margin-bottom: 1.5rem;
+            }
+
+            .testimonial-author {
+                padding-top: 1rem;
+            }
+
+            .testimonial-name {
+                font-size: 1rem;
+            }
+
+            .testimonial-date {
+                font-size: 0.85rem;
+            }
+
+            .testimonial-star {
+                width: 18px;
+                height: 18px;
+            }
+
+            .trustpilot-attribution {
+                margin-top: 2rem;
+                font-size: 0.85rem;
             }
 
             /* Make solutions grid 2 columns on mobile */
@@ -3560,6 +3898,46 @@
         </div>
     </section>
 
+    <!-- Featured Testimonial -->
+    <section class="featured-testimonial">
+        <div class="featured-testimonial-card fade-in">
+            <div class="featured-testimonial-header">
+                <div class="featured-trustpilot-badge">
+                    <span>5.0</span>
+                    <div class="featured-testimonial-stars">
+                        <svg class="featured-star" viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                        </svg>
+                        <svg class="featured-star" viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                        </svg>
+                        <svg class="featured-star" viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                        </svg>
+                        <svg class="featured-star" viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                        </svg>
+                        <svg class="featured-star" viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <p class="featured-testimonial-text">
+                "We recently worked with Cold Lava to develop a new website and explore AI solutions for our telesales business and the experience has been exceptional from start to finish. Oli and Jacob are incredibly efficient, knowledgeable, and easy to work with. They took the time to understand our needs, offered creative and practical solutions, and delivered everything on time (and often ahead of schedule). Their professionalism and attention to detail have made a real difference to our business, and the end result has far exceeded our expectations."
+            </p>
+            <div class="featured-testimonial-author">
+                <div class="featured-author-info">
+                    <div class="featured-author-name">Jack Castle</div>
+                    <div class="featured-author-date">November 2025</div>
+                </div>
+                <div class="featured-trustpilot-logo">
+                    Review from <a href="https://www.trustpilot.com/review/coldlava.ai" target="_blank" rel="noopener noreferrer">Trustpilot</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- AI Consulting & Strategy Section -->
     <section id="consulting" class="consulting">
         <!-- Consulting Hero -->
@@ -3999,6 +4377,127 @@
                 </div>
             </div>
         </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="section-divider"></div>
+        <div class="testimonials-header">
+            <h2 class="section-title fade-in">What Our Clients Say</h2>
+            <div class="trustpilot-score fade-in">
+                <span>TrustScore 4.0</span>
+                <div class="trustpilot-stars">
+                    <svg class="trustpilot-star" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                    <svg class="trustpilot-star" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                    <svg class="trustpilot-star" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                    <svg class="trustpilot-star" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                    <svg class="trustpilot-star" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                </div>
+            </div>
+            <a href="https://www.trustpilot.com/review/coldlava.ai" target="_blank" rel="noopener noreferrer" class="trustpilot-link fade-in">
+                View all reviews on Trustpilot →
+            </a>
+        </div>
+
+        <div class="testimonials-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">
+                    <svg class="testimonial-star" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                    <svg class="testimonial-star" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                    <svg class="testimonial-star" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                    <svg class="testimonial-star" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                    <svg class="testimonial-star" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">
+                    "We recently worked with Cold Lava to develop a new website and explore AI solutions for our telesales business and the experience has been exceptional from start to finish. Oli and Jacob are incredibly efficient, knowledgeable, and easy to work with. They took the time to understand our needs, offered creative and practical solutions, and delivered everything on time (and often ahead of schedule). Their professionalism and attention to detail have made a real difference to our business, and the end result has far exceeded our expectations."
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-name">Jack Castle</div>
+                    <div class="testimonial-date">November 2025</div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">
+                    <svg class="testimonial-star" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                    <svg class="testimonial-star" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                    <svg class="testimonial-star" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                    <svg class="testimonial-star" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                    <svg class="testimonial-star" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">
+                    "Since working with Cold Lava AI, things have completely changed for the better. Jacob and Oli have helped us automate our whole sales process, brought AI into the mix to make things run smoother, and built us a brand new website that looks and represents the business brilliantly. Everything feels so much more efficient now, and the whole process has been super easy and relaxed from start to finish."
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-name">Jason Wides</div>
+                    <div class="testimonial-date">November 2025</div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">
+                    <svg class="testimonial-star" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                    <svg class="testimonial-star" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                    <svg class="testimonial-star" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                    <svg class="testimonial-star" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                    <svg class="testimonial-star" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">
+                    "I currently use Cold Lava for my vehicle detailing business. We have an AI assistant who can answer the phone, grab details and even book jobs if I can't get to the phone. It massively helps us make sure we capture every client possible. A great system to use and incredibly affordable compared to a full time member of staff!"
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-name">Austin Eszcori</div>
+                    <div class="testimonial-date">October 2025</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="trustpilot-attribution">
+            Reviews powered by <a href="https://www.trustpilot.com" target="_blank" rel="noopener noreferrer">Trustpilot</a>
+        </div>
+    </section>
 
     <footer id="contact" class="footer">
         <div class="footer-logo">
