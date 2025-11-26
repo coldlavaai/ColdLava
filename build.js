@@ -25,7 +25,9 @@ fs.writeFileSync(path.join(outputDir, 'index.html'), content);
 const filesToCopy = [
   'coldlava-icon.png',
   'sophie-avatar.png',
-  'glowing-orb.png'
+  'glowing-orb.png',
+  'privacy.html',
+  'favicon.png'
 ];
 
 filesToCopy.forEach(file => {
