@@ -4775,9 +4775,13 @@
         // Enhanced smooth scrolling for navigation links
         document.querySelectorAll('.nav-link, .logo, .footer-nav-link').forEach(link => {
             link.addEventListener('click', (e) => {
-                e.preventDefault();
                 const targetId = link.getAttribute('href');
-                smoothScrollTo(targetId);
+                // Only prevent default and smooth scroll for anchor links (starting with #)
+                if (targetId && targetId.startsWith('#')) {
+                    e.preventDefault();
+                    smoothScrollTo(targetId);
+                }
+                // Let other links (like /privacy.html) work normally
             });
         });
 
