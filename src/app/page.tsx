@@ -101,7 +101,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+      <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 snap-start">
         <div className="container-default text-center max-w-4xl">
           <FadeIn>
             <p className="text-xs sm:text-sm uppercase tracking-[0.2em] text-white/40 mb-6">
@@ -152,7 +152,7 @@ export default function Home() {
       </section>
 
       {/* Positioning Statement */}
-      <section className="py-16 md:py-20 border-t border-white/5">
+      <section className="py-16 md:py-20 border-t border-white/5 snap-start">
         <div className="container-default max-w-4xl">
           <FadeIn>
             <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-8 md:p-12 text-center">
@@ -166,7 +166,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-24 md:py-32 border-t border-white/5">
+      <section id="services" className="py-24 md:py-32 border-t border-white/5 snap-start">
         <div className="container-default max-w-6xl">
           <div className="mb-16 text-center">
             <FadeIn>
@@ -203,7 +203,7 @@ export default function Home() {
       </section>
 
       {/* BOS Section */}
-      <section id="bos" className="py-24 md:py-32 border-t border-white/5">
+      <section id="bos" className="py-24 md:py-32 border-t border-white/5 snap-start">
         <div className="container-default max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <FadeIn>
@@ -274,7 +274,7 @@ export default function Home() {
       </section>
 
       {/* Integrations Ticker */}
-      <section className="py-16 border-t border-white/5">
+      <section className="py-16 border-t border-white/5 snap-start">
         <div className="container-default">
           <FadeIn>
             <p className="text-xs text-white/20 mb-6 text-center uppercase tracking-widest">
@@ -288,7 +288,7 @@ export default function Home() {
       </section>
 
       {/* Process Section */}
-      <section className="py-24 md:py-32 border-t border-white/5">
+      <section className="py-24 md:py-32 border-t border-white/5 snap-start">
         <div className="container-default max-w-6xl">
           <div className="mb-16 text-center">
             <FadeIn>
@@ -334,7 +334,7 @@ export default function Home() {
       </section>
 
       {/* Work Section */}
-      <section id="work" className="py-24 md:py-32 border-t border-white/5">
+      <section id="work" className="py-24 md:py-32 border-t border-white/5 snap-start">
         <div className="container-default max-w-5xl">
           <div className="mb-16 text-center">
             <FadeIn>
@@ -394,7 +394,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 md:py-32 border-t border-white/5">
+      <section id="contact" className="py-24 md:py-32 border-t border-white/5 snap-start">
         <div className="container-default max-w-4xl text-center">
           <FadeIn>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight mb-6">
