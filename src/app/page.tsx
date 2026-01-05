@@ -65,10 +65,6 @@ const process = [
 
 const testimonials = [
   {
-    quote: 'Incredibly efficient, knowledgeable, and easy to work with. Delivered everything on time, and often ahead of schedule. The end result far exceeded our expectations.',
-    name: 'Jack Castle',
-  },
-  {
     quote: 'Things have completely changed for the better. They helped us automate our whole sales process and built us a website that represents the business brilliantly.',
     name: 'Jason Wides',
     company: 'Greenstar Solar',
@@ -92,6 +88,10 @@ const testimonials = [
     quote: 'Placeholder testimonial text here. This will be replaced with a real client testimonial showcasing the impact of our work.',
     name: 'Client Name',
     company: 'Company Name',
+  },
+  {
+    quote: 'Incredibly efficient, knowledgeable, and easy to work with. Delivered everything on time, and often ahead of schedule. The end result far exceeded our expectations.',
+    name: 'Jack Castle',
   },
 ]
 
