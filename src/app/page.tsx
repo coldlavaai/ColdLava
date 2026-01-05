@@ -71,6 +71,7 @@ const testimonials = [
   {
     quote: 'Things have completely changed for the better. They helped us automate our whole sales process and built us a website that represents the business brilliantly.',
     name: 'Jason Wides',
+    company: 'Greenstar Solar',
   },
   {
     quote: 'We have an AI assistant who answers the phone, grabs details and books jobs. We capture every client possible. Incredibly affordable compared to a full time member of staff.',
@@ -86,6 +87,11 @@ const testimonials = [
     quote: 'The team\'s knowledge of AI and system development coupled with their work ethic made them the perfect partners to tackle our team and data challenges. Very pleased.',
     name: 'Mat Cunningham',
     company: 'Upmarket Hotels & Leisure',
+  },
+  {
+    quote: 'Placeholder testimonial text here. This will be replaced with a real client testimonial showcasing the impact of our work.',
+    name: 'Client Name',
+    company: 'Company Name',
   },
 ]
 
@@ -368,9 +374,9 @@ export default function Home() {
             </div>
           </FadeIn>
 
-          {/* All Testimonials */}
+          {/* Testimonials Grid (5 testimonials) */}
           <StaggerChildren className="mt-16 md:mt-20 grid md:grid-cols-2 gap-6 md:gap-8">
-            {testimonials.map((testimonial, i) => (
+            {testimonials.slice(1).map((testimonial, i) => (
               <StaggerItem key={i}>
                 <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-6 md:p-8 h-full flex flex-col justify-between text-center">
                   <p className="text-base md:text-lg text-white/60 italic leading-relaxed mb-6">
@@ -384,6 +390,20 @@ export default function Home() {
               </StaggerItem>
             ))}
           </StaggerChildren>
+
+          {/* Jack Castle - Featured Testimonial */}
+          <FadeIn delay={0.6}>
+            <div className="mt-12 md:mt-16 max-w-3xl mx-auto">
+              <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-6 md:p-8 text-center">
+                <p className="text-base md:text-lg text-white/60 italic leading-relaxed mb-6">
+                  "{testimonials[0].quote}"
+                </p>
+                <p className="text-white/40 text-sm">
+                  — {testimonials[0].name}
+                </p>
+              </div>
+            </div>
+          </FadeIn>
         </div>
       </section>
 
