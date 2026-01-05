@@ -2,46 +2,46 @@
 
 import Image from 'next/image'
 
-// Logos arranged for visual variety - mixing white/colored and different categories
-const allLogos = [
-  { name: 'React', path: '/logos/react.svg' },
-  { name: 'Supabase', path: '/logos/supabase.svg' },
-  { name: 'OpenAI', path: '/logos/openai.svg' },
-  { name: 'Stripe', path: '/logos/stripe.svg' },
-  { name: 'TypeScript', path: '/logos/typescript.svg' },
-  { name: 'AWS', path: '/logos/aws.svg' },
-  { name: 'PostgreSQL', path: '/logos/postgresql.svg' },
-  { name: 'Twilio', path: '/logos/twilio.svg' },
-  { name: 'Google', path: '/logos/google.png' },
-  { name: 'Docker', path: '/logos/docker.svg' },
-  { name: 'Shopify', path: '/logos/shopify.svg' },
-  { name: 'Claude', path: '/logos/claude.svg' },
-  { name: 'Zapier', path: '/logos/zapier.png' },
-  { name: 'Node.js', path: '/logos/nodejs.svg' },
-  { name: 'Meta', path: '/logos/meta.svg' },
-  { name: 'Retell', path: '/logos/retell.png' },
-  { name: 'WordPress', path: '/logos/wordpress.png' },
+// Tech Stack - Engineering credibility logos
+const techStackLogos = [
   { name: 'Next.js', path: '/logos/nextjs.png' },
-  { name: 'WhatsApp', path: '/logos/whatsapp.svg' },
-  { name: 'HubSpot', path: '/logos/hubspot.png' },
-  { name: 'Vercel', path: '/logos/vercel.svg' },
-  { name: 'Anthropic', path: '/logos/anthropic.svg' },
-  { name: 'Make', path: '/logos/make.png' },
-  { name: 'GitHub', path: '/logos/github.png' },
-  { name: 'Sanity', path: '/logos/sanity.png' },
-  { name: 'ElevenLabs', path: '/logos/elevenlabs.svg' },
-  { name: 'Xero', path: '/logos/xero.png' },
-  { name: 'Tailwind', path: '/logos/tailwind.svg' },
-  { name: 'LinkedIn', path: '/logos/linkedin.png' },
-  { name: 'VAPI', path: '/logos/VAPIFULL.png' },
-  { name: 'Cal.com', path: '/logos/cal.svg' },
-  { name: 'Airtable', path: '/logos/airtable.png' },
-  { name: 'Telegram', path: '/logos/telegram.svg' },
+  { name: 'TypeScript', path: '/logos/typescript.svg' },
+  { name: 'React', path: '/logos/react.svg' },
+  { name: 'Node.js', path: '/logos/nodejs.svg' },
   { name: 'Python', path: '/logos/python.svg' },
-  { name: 'n8n', path: '/logos/n8n.svg' },
+  { name: 'Supabase', path: '/logos/supabase.svg' },
+  { name: 'PostgreSQL', path: '/logos/postgresql.svg' },
+  { name: 'AWS', path: '/logos/aws.svg' },
+  { name: 'Vercel', path: '/logos/vercel.svg' },
+  { name: 'Docker', path: '/logos/docker.svg' },
+  { name: 'GitHub', path: '/logos/github.png' },
 ]
 
-function LogoTicker({ logos, reverse = false }: { logos: typeof allLogos; reverse?: boolean }) {
+// Integrations - Business utility logos
+const integrationsLogos = [
+  { name: 'HubSpot', path: '/logos/hubspot.png' },
+  { name: 'Xero', path: '/logos/xero.png' },
+  { name: 'Stripe', path: '/logos/stripe.svg' },
+  { name: 'Twilio', path: '/logos/twilio.svg' },
+  { name: 'WhatsApp', path: '/logos/whatsapp.svg' },
+  { name: 'Shopify', path: '/logos/shopify.svg' },
+  { name: 'Cal.com', path: '/logos/cal.svg' },
+  { name: 'Google', path: '/logos/google.png' },
+  { name: 'Zapier', path: '/logos/zapier.png' },
+  { name: 'Make', path: '/logos/make.png' },
+  { name: 'n8n', path: '/logos/n8n.svg' },
+  { name: 'Airtable', path: '/logos/airtable.png' },
+  { name: 'OpenAI', path: '/logos/openai.svg' },
+  { name: 'Claude', path: '/logos/claude.svg' },
+  { name: 'Anthropic', path: '/logos/anthropic.svg' },
+  { name: 'ElevenLabs', path: '/logos/elevenlabs.svg' },
+  { name: 'Retell', path: '/logos/retell.png' },
+  { name: 'VAPI', path: '/logos/VAPIFULL.png' },
+]
+
+type Logo = { name: string; path: string }
+
+function LogoTicker({ logos }: { logos: Logo[] }) {
   // Triple for smooth infinite
   const repeatedLogos = [...logos, ...logos, ...logos]
 
@@ -52,7 +52,7 @@ function LogoTicker({ logos, reverse = false }: { logos: typeof allLogos; revers
       <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
 
       <div
-        className={`flex items-center ${reverse ? 'animate-ticker-reverse' : 'animate-ticker'}`}
+        className="flex items-center animate-ticker"
         style={{ width: 'max-content' }}
       >
         {repeatedLogos.map((logo, index) => (
@@ -77,19 +77,23 @@ function LogoTicker({ logos, reverse = false }: { logos: typeof allLogos; revers
   )
 }
 
-export function TechTicker() {
-  // Split logos for continuous carousel effect
-  const midpoint = Math.ceil(allLogos.length / 2)
-  const topLogos = allLogos.slice(0, midpoint)
-  const bottomLogos = allLogos.slice(midpoint)
-
+export function TechStackTicker() {
   return (
-    <div className="py-6 space-y-3">
-      {/* Top ticker - flows left */}
-      <LogoTicker logos={topLogos} />
-
-      {/* Bottom ticker - flows right (reverse) */}
-      <LogoTicker logos={bottomLogos} reverse />
+    <div className="py-6">
+      <LogoTicker logos={techStackLogos} />
     </div>
   )
+}
+
+export function IntegrationsTicker() {
+  return (
+    <div className="py-6">
+      <LogoTicker logos={integrationsLogos} />
+    </div>
+  )
+}
+
+// Legacy export for backward compatibility
+export function TechTicker() {
+  return <TechStackTicker />
 }

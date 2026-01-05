@@ -15,9 +15,10 @@ export function Footer() {
               height={48}
               className="h-12 w-auto object-contain"
             />
-            <span className="text-sm text-white/30">
-              © {new Date().getFullYear()} Cold Lava Ltd. Liverpool, UK.
-            </span>
+            <div className="text-sm text-white/30">
+              <div>© {new Date().getFullYear()} Cold Lava Ltd. United Kingdom.</div>
+              <div>Company No. [XXXXXXXX]</div>
+            </div>
           </div>
 
           {/* Links */}

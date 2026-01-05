@@ -12,19 +12,20 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: 'Cold Lava — Intelligent Business Systems',
   description:
-    'Consultancy and software development for businesses ready to build what they actually need.',
+    'Custom software, AI agents, and automation for UK businesses ready to scale beyond generic tools.',
   keywords: [
     'AI consultancy',
     'custom software',
     'business automation',
     'AI agents',
-    'Liverpool',
+    'United Kingdom',
+    'UK',
   ],
   authors: [{ name: 'Cold Lava' }],
   openGraph: {
     title: 'Cold Lava — Intelligent Business Systems',
     description:
-      'Consultancy and software development for businesses ready to build what they actually need.',
+      'Custom software, AI agents, and automation for UK businesses ready to scale beyond generic tools.',
     type: 'website',
     locale: 'en_GB',
     siteName: 'Cold Lava',
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Cold Lava — Intelligent Business Systems',
     description:
-      'Consultancy and software development for businesses ready to build what they actually need.',
+      'Custom software, AI agents, and automation for UK businesses ready to scale beyond generic tools.',
   },
 }
 

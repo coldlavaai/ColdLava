@@ -1,4 +1,4 @@
-import { FadeIn, StaggerChildren, StaggerItem, TechTicker } from '@/components'
+import { FadeIn, StaggerChildren, StaggerItem, TechStackTicker, IntegrationsTicker } from '@/components'
 
 const services = [
   {
@@ -85,7 +85,7 @@ export default function Home() {
 
           <FadeIn delay={0.2}>
             <p className="text-lg sm:text-xl text-white/50 max-w-2xl mx-auto mb-12 leading-relaxed">
-              Custom software, AI agents, and automation for companies done with off-the-shelf compromises.
+              Custom software, AI agents, and automation for UK businesses ready to scale beyond generic tools.
             </p>
           </FadeIn>
 
@@ -109,7 +109,7 @@ export default function Home() {
             <p className="text-xs text-white/20 mb-6 uppercase tracking-widest">
               Modern stack. Serious security. UK-based.
             </p>
-            <TechTicker />
+            <TechStackTicker />
           </FadeIn>
         </div>
 
@@ -122,31 +122,46 @@ export default function Home() {
         />
       </section>
 
-      {/* Proof Band */}
+      {/* Client Logos */}
       <section className="py-16 border-t border-white/5">
         <div className="container-default">
           <FadeIn>
             <p className="text-sm text-white/30 text-center mb-10">
-              Trusted by operators who needed more than templates
+              Satisfied customers
             </p>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-              <div className="text-center">
-                <p className="text-2xl md:text-3xl font-semibold">100%</p>
-                <p className="text-xs text-white/40 mt-1">5-star reviews</p>
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+              <div className="text-sm text-white/20 hover:text-white/40 transition-colors">
+                Detail Dynamics
               </div>
-              <div className="w-px h-8 bg-white/10 hidden md:block" />
-              <div className="text-center">
-                <p className="text-2xl md:text-3xl font-semibold">40%</p>
-                <p className="text-xs text-white/40 mt-1">avg. admin time saved</p>
+              <div className="w-px h-6 bg-white/10 hidden md:block" />
+              <div className="text-sm text-white/20 hover:text-white/40 transition-colors">
+                Greenstar Solar
               </div>
-              <div className="w-px h-8 bg-white/10 hidden md:block" />
-              <div className="text-center">
-                <p className="text-2xl md:text-3xl font-semibold">£100k+</p>
-                <p className="text-xs text-white/40 mt-1">revenue recovered</p>
+              <div className="w-px h-6 bg-white/10 hidden md:block" />
+              <div className="text-sm text-white/20 hover:text-white/40 transition-colors">
+                [Client 3]
+              </div>
+              <div className="w-px h-6 bg-white/10 hidden md:block" />
+              <div className="text-sm text-white/20 hover:text-white/40 transition-colors">
+                [Client 4]
               </div>
             </div>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* Integrations Ticker */}
+      <section className="py-16 border-t border-white/5">
+        <div className="container-default">
+          <FadeIn>
+            <p className="text-xs text-white/20 mb-6 text-center uppercase tracking-widest">
+              We integrate with the tools you already use
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.1}>
+            <IntegrationsTicker />
           </FadeIn>
         </div>
       </section>
@@ -249,44 +264,35 @@ export default function Home() {
 
       {/* Work Section */}
       <section id="work" className="py-24 md:py-32 border-t border-white/5">
-        <div className="container-default">
-          <div className="mb-16">
+        <div className="container-default text-center">
+          <div className="mb-12">
             <FadeIn>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight mb-4">
                 Results, not promises
               </h2>
             </FadeIn>
             <FadeIn delay={0.1}>
-              <p className="text-lg text-white/50 max-w-xl">
-                A few of the systems we've built and the outcomes they've delivered.
+              <p className="text-lg text-white/50 max-w-xl mx-auto">
+                We&apos;ve built systems for vehicle detailing, renewable energy, landscaping, and more.
               </p>
             </FadeIn>
           </div>
 
-          <StaggerChildren className="space-y-4">
-            {caseStudies.map((study, i) => (
-              <StaggerItem key={i}>
-                <div className="group bg-white/[0.03] hover:bg-white/[0.06] border border-white/5 hover:border-white/10 rounded-2xl p-6 md:p-8 transition-all duration-300">
-                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                    <div>
-                      <p className="text-xs uppercase tracking-wider text-white/30 mb-2">
-                        {study.label}
-                      </p>
-                      <h3 className="text-xl md:text-2xl font-medium mb-2">
-                        {study.title}
-                      </h3>
-                      <p className="text-white/50 text-sm md:text-base">
-                        {study.outcome}
-                      </p>
-                    </div>
-                    <span className="text-sm text-white/30 group-hover:text-white/60 transition-colors whitespace-nowrap">
-                      View case study →
-                    </span>
-                  </div>
-                </div>
-              </StaggerItem>
-            ))}
-          </StaggerChildren>
+          <FadeIn delay={0.2}>
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+              <div className="text-sm text-white/20 hover:text-white/40 transition-colors">
+                Detail Dynamics
+              </div>
+              <div className="w-px h-6 bg-white/10 hidden md:block" />
+              <div className="text-sm text-white/20 hover:text-white/40 transition-colors">
+                Greenstar Solar
+              </div>
+              <div className="w-px h-6 bg-white/10 hidden md:block" />
+              <div className="text-sm text-white/20 hover:text-white/40 transition-colors">
+                [Client 3]
+              </div>
+            </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -321,6 +327,12 @@ export default function Home() {
               </StaggerItem>
             ))}
           </StaggerChildren>
+
+          <FadeIn delay={0.4}>
+            <p className="text-center text-white/30 mt-16 max-w-md mx-auto">
+              Good, fast, cheap. Pick two. We optimise for good.
+            </p>
+          </FadeIn>
         </div>
       </section>
 
@@ -334,35 +346,20 @@ export default function Home() {
           </FadeIn>
 
           <FadeIn delay={0.1}>
-            <p className="text-lg text-white/50 mb-16 leading-relaxed">
-              Cold Lava is a consultancy and software development company based in Liverpool. We exist because off-the-shelf software fails most businesses — and AI has finally made custom solutions accessible.
+            <p className="text-lg text-white/50 mb-8 leading-relaxed">
+              Cold Lava is a software consultancy based in the United Kingdom. We exist because off-the-shelf tools fail most businesses. AI has finally made custom solutions accessible.
             </p>
           </FadeIn>
 
           <FadeIn delay={0.2}>
-            <div className="flex flex-col sm:flex-row justify-center gap-12 md:gap-16 mb-12">
-              <div className="text-center">
-                <div className="w-20 h-20 rounded-full bg-white/5 mb-4 mx-auto" />
-                <h3 className="font-medium mb-1">Oliver</h3>
-                <p className="text-sm text-white/40 mb-2">Systems & Operations</p>
-                <p className="text-sm text-white/30 max-w-[200px] mx-auto">
-                  Builds the systems. Obsessed with workflows that work.
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="w-20 h-20 rounded-full bg-white/5 mb-4 mx-auto" />
-                <h3 className="font-medium mb-1">Jacob</h3>
-                <p className="text-sm text-white/40 mb-2">Sales & Strategy</p>
-                <p className="text-sm text-white/30 max-w-[200px] mx-auto">
-                  Leads the conversations. Turns cold leads into closed deals.
-                </p>
-              </div>
-            </div>
+            <p className="text-lg text-white/50 mb-8 leading-relaxed">
+              We&apos;re a small team by design. Every project gets direct attention from senior people. No account managers, no handoffs, no juniors learning on your dime.
+            </p>
           </FadeIn>
 
           <FadeIn delay={0.3}>
-            <p className="text-sm text-white/30 max-w-md mx-auto">
-              We're operators first. We've run businesses, felt the pain of bad software, and built Cold Lava to fix it.
+            <p className="text-lg text-white/50 leading-relaxed max-w-2xl mx-auto">
+              Founded by operators who&apos;ve run businesses, felt the pain of bad software, and built Cold Lava to fix it.
             </p>
           </FadeIn>
         </div>
@@ -378,8 +375,14 @@ export default function Home() {
           </FadeIn>
 
           <FadeIn delay={0.1}>
-            <p className="text-lg text-white/50 mb-12 leading-relaxed">
+            <p className="text-lg text-white/50 mb-4 leading-relaxed">
               Ready to build something? Book a discovery call or send us a message. No pitch decks, no pressure.
+            </p>
+          </FadeIn>
+
+          <FadeIn delay={0.15}>
+            <p className="text-lg text-white/50 mb-12 leading-relaxed">
+              We work best with UK businesses ready to invest in systems that last. Not quick fixes.
             </p>
           </FadeIn>
 
