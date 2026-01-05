@@ -150,9 +150,10 @@ export default function Home() {
         <div className="container-default max-w-4xl">
           <FadeIn>
             <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-8 md:p-12 text-center">
-              <p className="text-2xl md:text-3xl text-white/80 leading-relaxed">
-                We build software tailored to how you actually operate, not how a product manager in San Francisco thinks you should.
+              <p className="text-2xl md:text-3xl text-white/80 italic leading-relaxed mb-4">
+                "We build software tailored to how you operate, not how a product manager in San Francisco thinks you should."
               </p>
+              <p className="text-white/40 text-sm">— Oliver, Head Developer</p>
             </div>
           </FadeIn>
         </div>
