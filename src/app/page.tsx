@@ -63,6 +63,32 @@ const process = [
   },
 ]
 
+const testimonials = [
+  {
+    quote: 'Incredibly efficient, knowledgeable, and easy to work with. Delivered everything on time, and often ahead of schedule. The end result far exceeded our expectations.',
+    name: 'Jack Castle',
+  },
+  {
+    quote: 'Things have completely changed for the better. They helped us automate our whole sales process and built us a website that represents the business brilliantly.',
+    name: 'Jason Wides',
+  },
+  {
+    quote: 'We have an AI assistant who answers the phone, grabs details and books jobs. We capture every client possible. Incredibly affordable compared to a full time member of staff.',
+    name: 'Austin Eszcori',
+    company: 'Detail Dynamics',
+  },
+  {
+    quote: 'Working with Cold Lava has allowed us to rethink our client delivery systems and reshape the way our industry works with data.',
+    name: 'Harry Bennett',
+    company: 'LCB',
+  },
+  {
+    quote: 'The team\'s knowledge of AI and system development coupled with their work ethic made them the perfect partners to tackle our team and data challenges. Very pleased.',
+    name: 'Mat Cunningham',
+    company: 'Upmarket Hotels & Leisure',
+  },
+]
+
 const techStack = ['Next.js', 'Supabase', 'n8n', 'Vercel', 'GitHub', 'TypeScript']
 
 export default function Home() {
@@ -252,19 +278,45 @@ export default function Home() {
 
           <FadeIn delay={0.2}>
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-              <div className="text-sm text-white/20 hover:text-white/40 transition-colors">
-                Detail Dynamics
-              </div>
-              <div className="w-px h-6 bg-white/10 hidden md:block" />
-              <div className="text-sm text-white/20 hover:text-white/40 transition-colors">
-                Greenstar Solar
-              </div>
-              <div className="w-px h-6 bg-white/10 hidden md:block" />
-              <div className="text-sm text-white/20 hover:text-white/40 transition-colors">
-                [Client 3]
-              </div>
+              <img
+                src="/client-logos/DetailDynamics-Logo.png"
+                alt="Detail Dynamics"
+                className="h-8 md:h-10 w-auto grayscale opacity-40 hover:opacity-70 transition-opacity"
+              />
+              <img
+                src="/client-logos/Greenstar-Logo.png"
+                alt="Greenstar Solar"
+                className="h-8 md:h-10 w-auto grayscale opacity-40 hover:opacity-70 transition-opacity"
+              />
+              <img
+                src="/client-logos/LCB-Logo.png"
+                alt="LCB"
+                className="h-8 md:h-10 w-auto grayscale opacity-40 hover:opacity-70 transition-opacity"
+              />
+              <img
+                src="/client-logos/UpmarketLeisure-Logo.png"
+                alt="Upmarket Hotels & Leisure"
+                className="h-8 md:h-10 w-auto grayscale opacity-40 hover:opacity-70 transition-opacity"
+              />
             </div>
           </FadeIn>
+
+          {/* Testimonials */}
+          <StaggerChildren className="grid md:grid-cols-3 gap-6 md:gap-8 mt-16 md:mt-24 max-w-6xl mx-auto">
+            {testimonials.map((testimonial, i) => (
+              <StaggerItem key={i}>
+                <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-6 md:p-8 h-full">
+                  <p className="text-white/50 text-sm md:text-base leading-relaxed mb-6">
+                    {testimonial.quote}
+                  </p>
+                  <p className="text-white/70 text-sm font-medium">{testimonial.name}</p>
+                  {testimonial.company && (
+                    <p className="text-white/30 text-xs mt-1">{testimonial.company}</p>
+                  )}
+                </div>
+              </StaggerItem>
+            ))}
+          </StaggerChildren>
         </div>
       </section>
 
