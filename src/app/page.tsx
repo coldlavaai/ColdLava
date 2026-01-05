@@ -75,7 +75,7 @@ const testimonials = [
     company: 'Detail Dynamics',
   },
   {
-    quote: 'Working with Cold Lava has allowed us to rethink our client delivery systems and reshape the way our industry works with data.',
+    quote: 'Working with Colaba has allowed us to rethink our client delivery systems and reshape the way our business processes and displays data.',
     name: 'Harry Bennett',
     company: 'LCB',
   },
