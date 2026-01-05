@@ -115,6 +115,20 @@ export default function Home() {
         />
       </section>
 
+      {/* Tech Section */}
+      <section className="py-16 md:py-20 border-t border-white/5">
+        <div className="container-default text-center">
+          <FadeIn>
+            <p className="text-sm text-white/30 mb-8">
+              Modern stack. Serious security. UK-based. GDPR-aware.
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.1}>
+            <TechTicker />
+          </FadeIn>
+        </div>
+      </section>
+
       {/* Proof Band */}
       <section className="py-16 border-t border-white/5">
         <div className="container-default">
@@ -314,20 +328,6 @@ export default function Home() {
               </StaggerItem>
             ))}
           </StaggerChildren>
-        </div>
-      </section>
-
-      {/* Tech Section */}
-      <section className="py-16 md:py-20 border-t border-white/5">
-        <div className="container-default text-center">
-          <FadeIn>
-            <p className="text-sm text-white/30 mb-8">
-              Modern stack. Serious security. UK-based. GDPR-aware.
-            </p>
-          </FadeIn>
-          <FadeIn delay={0.1}>
-            <TechTicker />
-          </FadeIn>
         </div>
       </section>
 
