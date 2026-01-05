@@ -53,13 +53,13 @@ function LogoTicker({ logos, reverse = false }: { logos: typeof allLogos; revers
             key={index}
             className="flex-shrink-0 px-8 md:px-10 group"
           >
-            <div className="h-12 flex items-center justify-center">
+            <div className="h-12 w-32 flex items-center justify-center">
               <Image
                 src={logo.path}
                 alt={logo.name}
                 width={140}
                 height={48}
-                className="h-10 w-auto object-contain grayscale brightness-200 opacity-70 group-hover:grayscale-0 group-hover:brightness-100 group-hover:opacity-100 transition-all duration-300"
+                className="h-10 w-auto max-w-full object-contain grayscale brightness-200 opacity-70 group-hover:grayscale-0 group-hover:brightness-100 group-hover:opacity-100 transition-all duration-300"
                 unoptimized
               />
             </div>

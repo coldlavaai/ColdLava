@@ -67,10 +67,10 @@ module.exports = {
         },
         ticker: {
           '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-25%)' },
+          '100%': { transform: 'translateX(-33.333333%)' },
         },
         tickerReverse: {
-          '0%': { transform: 'translateX(-25%)' },
+          '0%': { transform: 'translateX(-33.333333%)' },
           '100%': { transform: 'translateX(0)' },
         },
       },
