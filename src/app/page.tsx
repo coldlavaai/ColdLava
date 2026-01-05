@@ -149,9 +149,11 @@ export default function Home() {
       <section className="py-16 md:py-20 border-t border-white/5">
         <div className="container-default max-w-4xl">
           <FadeIn>
-            <p className="text-2xl md:text-3xl text-white/70 leading-relaxed">
-              We build software tailored to how you actually operate — not how a product manager in San Francisco thinks you should.
-            </p>
+            <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-8 md:p-12 text-center">
+              <p className="text-2xl md:text-3xl text-white/80 leading-relaxed">
+                We build software tailored to how you actually operate, not how a product manager in San Francisco thinks you should.
+              </p>
+            </div>
           </FadeIn>
         </div>
       </section>
