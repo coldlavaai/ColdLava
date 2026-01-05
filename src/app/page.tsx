@@ -73,7 +73,7 @@ export default function Home() {
         <div className="container-default text-center">
           <FadeIn>
             <p className="text-xs sm:text-sm uppercase tracking-[0.2em] text-white/40 mb-6">
-              Consultancy & Software Development
+              AI consultancy & software development
             </p>
           </FadeIn>
 
@@ -90,17 +90,14 @@ export default function Home() {
           </FadeIn>
 
           <FadeIn delay={0.3}>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-20">
+            <div className="flex justify-center mb-20">
               <a
                 href="https://cal.com/coldlava/discovery-call"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
               >
-                Book a discovery call
-              </a>
-              <a href="#work" className="btn-secondary">
-                View our work
+                Talk to us
               </a>
             </div>
           </FadeIn>
@@ -120,50 +117,6 @@ export default function Home() {
             background: 'radial-gradient(circle, rgba(249,115,22,0.4) 0%, transparent 70%)',
           }}
         />
-      </section>
-
-      {/* Client Logos */}
-      <section className="py-16 border-t border-white/5">
-        <div className="container-default">
-          <FadeIn>
-            <p className="text-sm text-white/30 text-center mb-10">
-              Satisfied customers
-            </p>
-          </FadeIn>
-          <FadeIn delay={0.1}>
-            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-              <div className="text-sm text-white/20 hover:text-white/40 transition-colors">
-                Detail Dynamics
-              </div>
-              <div className="w-px h-6 bg-white/10 hidden md:block" />
-              <div className="text-sm text-white/20 hover:text-white/40 transition-colors">
-                Greenstar Solar
-              </div>
-              <div className="w-px h-6 bg-white/10 hidden md:block" />
-              <div className="text-sm text-white/20 hover:text-white/40 transition-colors">
-                [Client 3]
-              </div>
-              <div className="w-px h-6 bg-white/10 hidden md:block" />
-              <div className="text-sm text-white/20 hover:text-white/40 transition-colors">
-                [Client 4]
-              </div>
-            </div>
-          </FadeIn>
-        </div>
-      </section>
-
-      {/* Integrations Ticker */}
-      <section className="py-16 border-t border-white/5">
-        <div className="container-default">
-          <FadeIn>
-            <p className="text-xs text-white/20 mb-6 text-center uppercase tracking-widest">
-              We integrate with the tools you already use
-            </p>
-          </FadeIn>
-          <FadeIn delay={0.1}>
-            <IntegrationsTicker />
-          </FadeIn>
-        </div>
       </section>
 
       {/* Services Section */}
@@ -196,6 +149,20 @@ export default function Home() {
               </StaggerItem>
             ))}
           </StaggerChildren>
+        </div>
+      </section>
+
+      {/* Integrations Ticker */}
+      <section className="py-16 border-t border-white/5">
+        <div className="container-default">
+          <FadeIn>
+            <p className="text-xs text-white/20 mb-6 text-center uppercase tracking-widest">
+              We integrate with the tools you already use
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.1}>
+            <IntegrationsTicker />
+          </FadeIn>
         </div>
       </section>
 
@@ -242,8 +209,13 @@ export default function Home() {
               </FadeIn>
 
               <FadeIn delay={0.4}>
-                <a href="#contact" className="btn-accent inline-flex">
-                  Join the waitlist
+                <a
+                  href="https://cal.com/coldlava/discovery-call"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-accent inline-flex"
+                >
+                  Talk to us
                 </a>
                 <p className="text-sm text-white/30 mt-3">
                   For operators done stitching together tools.
@@ -268,7 +240,7 @@ export default function Home() {
           <div className="mb-12">
             <FadeIn>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight mb-4">
-                Results, not promises
+                Satisfied customers
               </h2>
             </FadeIn>
             <FadeIn delay={0.1}>

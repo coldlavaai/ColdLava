@@ -72,7 +72,7 @@ export function Navigation() {
               rel="noopener noreferrer"
               className="text-sm px-5 py-2.5 bg-white text-black rounded-full hover:bg-white/90 transition-colors duration-300"
             >
-              Get in touch
+              Talk to us
             </Link>
           </div>
 
