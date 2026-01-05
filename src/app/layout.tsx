@@ -2,8 +2,6 @@ import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { SmoothScroll, Navigation, Footer } from '@/components'
-import { LavaProvider } from '@/contexts/LavaContext'
-import { LavaBackground } from '@/components/LavaBackground'
 import '@/styles/globals.css'
 
 export const metadata: Metadata = {
@@ -42,15 +40,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body className="font-sans antialiased">
-        <LavaProvider>
-          <LavaBackground />
-          <SmoothScroll>
-            <Navigation />
-            <main>{children}</main>
-            <Footer />
-            <div className="grain" aria-hidden="true" />
-          </SmoothScroll>
-        </LavaProvider>
+        <SmoothScroll>
+          <Navigation />
+          <main>{children}</main>
+          <Footer />
+          <div className="grain" aria-hidden="true" />
+        </SmoothScroll>
       </body>
     </html>
   )

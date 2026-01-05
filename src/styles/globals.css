@@ -15,8 +15,6 @@
   --color-border: #424245;
 
   /* Z-index layers */
-  --z-lava-background: -1;
-  --z-content: 0;
   --z-navigation: 50;
   --z-grain: 9999;
 }
