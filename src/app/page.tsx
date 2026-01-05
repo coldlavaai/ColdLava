@@ -352,24 +352,24 @@ export default function Home() {
           <FadeIn delay={0.2}>
             <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
               <img
-                src="/client-logos/DetailDynamics-Logo.png"
-                alt="Detail Dynamics"
-                className="h-8 md:h-10 w-auto grayscale opacity-40 hover:opacity-100 hover:grayscale-0 transition-all"
+                src="/client-logos/UpmarketLeisure-Logo.png"
+                alt="Upmarket Hotels & Leisure"
+                className="h-8 md:h-10 w-auto opacity-90 hover:opacity-100 transition-all brightness-0 invert"
               />
               <img
-                src="/client-logos/Greenstar-Logo.png"
-                alt="Greenstar Solar"
-                className="h-8 md:h-10 w-auto grayscale opacity-40 hover:opacity-100 hover:grayscale-0 transition-all"
+                src="/client-logos/DetailDynamics-Logo.png"
+                alt="Detail Dynamics"
+                className="h-8 md:h-10 w-auto opacity-90 hover:opacity-100 transition-all"
               />
               <img
                 src="/client-logos/LCB-Logo.png"
                 alt="LCB"
-                className="h-8 md:h-10 w-auto grayscale opacity-40 hover:opacity-100 hover:grayscale-0 transition-all"
+                className="h-8 md:h-10 w-auto opacity-90 hover:opacity-100 transition-all"
               />
               <img
-                src="/client-logos/UpmarketLeisure-Logo.png"
-                alt="Upmarket Hotels & Leisure"
-                className="h-8 md:h-10 w-auto grayscale opacity-40 hover:opacity-100 hover:grayscale-0 transition-all brightness-0 invert"
+                src="/client-logos/Greenstar-Logo.png"
+                alt="Greenstar Solar"
+                className="h-8 md:h-10 w-auto opacity-90 hover:opacity-100 transition-all"
               />
             </div>
           </FadeIn>
