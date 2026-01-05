@@ -59,8 +59,8 @@ function LogoTicker({ logos }: { logos: Logo[] }) {
         const itemCenterX = rect.left + rect.width / 2
         const distanceFromCenter = Math.abs(centerX - itemCenterX)
 
-        // Spotlight radius - sized to ensure at least one logo is always lit
-        const spotlightRadius = 140
+        // Spotlight radius - tight for single logo, with smooth handoff
+        const spotlightRadius = 100
 
         if (distanceFromCenter < spotlightRadius) {
           item.classList.add('in-spotlight')
