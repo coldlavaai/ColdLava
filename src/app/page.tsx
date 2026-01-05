@@ -281,22 +281,22 @@ export default function Home() {
               <img
                 src="/client-logos/DetailDynamics-Logo.png"
                 alt="Detail Dynamics"
-                className="h-8 md:h-10 w-auto grayscale opacity-40 hover:opacity-70 transition-opacity"
+                className="h-8 md:h-10 w-auto grayscale opacity-40 hover:opacity-100 hover:grayscale-0 transition-all"
               />
               <img
                 src="/client-logos/Greenstar-Logo.png"
                 alt="Greenstar Solar"
-                className="h-8 md:h-10 w-auto grayscale opacity-40 hover:opacity-70 transition-opacity"
+                className="h-8 md:h-10 w-auto grayscale opacity-40 hover:opacity-100 hover:grayscale-0 transition-all"
               />
               <img
                 src="/client-logos/LCB-Logo.png"
                 alt="LCB"
-                className="h-8 md:h-10 w-auto grayscale opacity-40 hover:opacity-70 transition-opacity"
+                className="h-8 md:h-10 w-auto grayscale opacity-40 hover:opacity-100 hover:grayscale-0 transition-all"
               />
               <img
                 src="/client-logos/UpmarketLeisure-Logo.png"
                 alt="Upmarket Hotels & Leisure"
-                className="h-8 md:h-10 w-auto grayscale opacity-40 hover:opacity-70 transition-opacity"
+                className="h-8 md:h-10 w-auto grayscale opacity-40 hover:opacity-100 hover:grayscale-0 transition-all brightness-0 invert"
               />
             </div>
           </FadeIn>
