@@ -587,7 +587,7 @@ export default function Home() {
                 {/* Button */}
                 <div className="relative px-8 py-4 bg-white text-black font-medium overflow-hidden">
                   {/* Hover effect - cyan sweep */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-cyan-400 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#C9A962] to-[#D4B76E] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out" />
 
                   {/* Text */}
                   <span className="relative z-10 flex items-center gap-3 group-hover:text-black transition-colors duration-300">
@@ -772,7 +772,7 @@ export default function Home() {
                 {/* Button */}
                 <div className="relative px-8 py-4 bg-white text-black font-medium overflow-hidden">
                   {/* Hover effect - cyan sweep */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-cyan-400 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#C9A962] to-[#D4B76E] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out" />
 
                   {/* Text */}
                   <span className="relative z-10 flex items-center gap-3 group-hover:text-black transition-colors duration-300">
@@ -990,7 +990,7 @@ export default function Home() {
                 {/* Button */}
                 <div className="relative px-8 py-5 bg-white text-black font-medium overflow-hidden">
                   {/* Hover effect - cyan sweep */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-cyan-400 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#C9A962] to-[#D4B76E] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out" />
 
                   {/* Text */}
                   <span className="relative z-10 flex items-center justify-center gap-3 group-hover:text-black transition-colors duration-300">
@@ -1017,7 +1017,7 @@ export default function Home() {
                 {/* Button */}
                 <div className="relative px-8 py-5 bg-white text-black font-medium overflow-hidden">
                   {/* Hover effect - cyan sweep */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-cyan-400 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#C9A962] to-[#D4B76E] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out" />
 
                   {/* Text */}
                   <span className="relative z-10 flex items-center justify-center gap-3 group-hover:text-black transition-colors duration-300 font-mono text-sm">

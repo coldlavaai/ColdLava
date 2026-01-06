@@ -4,9 +4,9 @@ import { useEffect } from 'react'
 
 export function DynamicFavicon() {
   useEffect(() => {
-    // Favicon paths
-    const defaultFavicon = '/favicon.svg' // Blue version when tab is active
-    const awayFavicon = '/favicon-away.svg' // Gold/amber version when tab is inactive
+    // Favicon paths - using the actual Cold Lava logo
+    const defaultFavicon = '/Cold Lava Logo/Cold Lava - Icon.png' // Blue version when tab is active
+    const awayFavicon = '/Cold Lava Logo/ColdLava-GOLD.png' // Gold/amber version when tab is inactive
 
     const setFavicon = (href: string) => {
       let link = document.querySelector("link[rel*='icon']") as HTMLLinkElement
