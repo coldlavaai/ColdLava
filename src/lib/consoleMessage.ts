@@ -1,6 +1,13 @@
+// Flag to ensure message only prints once
+let hasBeenPrinted = false
+
 export function printConsoleMessage() {
   // Only run in browser
   if (typeof window === 'undefined') return
+
+  // Prevent duplicate messages (React Strict Mode runs effects twice)
+  if (hasBeenPrinted) return
+  hasBeenPrinted = true
 
   // ASCII art logo
   const logo = `

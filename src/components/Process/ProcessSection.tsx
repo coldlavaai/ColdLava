@@ -64,7 +64,7 @@ export function ProcessSection() {
   }, [startTime, activeStage])
 
   return (
-    <section ref={sectionRef} className="py-32 border-t border-white/5 relative overflow-hidden">
+    <section id="process" ref={sectionRef} className="py-32 border-t border-white/5 relative overflow-hidden">
       {/* Grid overlay */}
       <div className="absolute inset-0 opacity-[0.015]" style={{
         backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)',

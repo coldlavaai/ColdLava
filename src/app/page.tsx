@@ -856,7 +856,7 @@ export default function Home() {
       </section>
 
       {/* TESTIMONIALS - Architectural Blueprint */}
-      <section id="work" className="relative py-32 border-t border-white/5 overflow-hidden">
+      <section id="clients" className="relative py-32 border-t border-white/5 overflow-hidden">
         <div className="container-default">
           {/* Section Header */}
           <div className="mb-20">
