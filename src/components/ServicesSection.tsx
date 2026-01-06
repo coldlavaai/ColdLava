@@ -163,11 +163,6 @@ export function ServicesSection() {
               <span className="font-mono text-[10px] text-cyan-500/60 uppercase tracking-wider">Featured / 01</span>
             </div>
 
-            {/* Corner coordinates */}
-            <div className="absolute top-0 left-0 -translate-y-full pl-2 pb-1">
-              <span className="font-mono text-[8px] text-white/15">[0.0, 1.0]</span>
-            </div>
-
             {/* Main card */}
             <div className="relative h-full bg-gradient-to-br from-white/[0.02] to-white/[0.01] border border-white/10 p-8 lg:p-10 overflow-hidden">
               {/* Animated scan line */}
