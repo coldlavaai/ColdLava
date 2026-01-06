@@ -52,7 +52,7 @@ export function SmoothScroll({ children }: SmoothScrollProps) {
           const targetElement = document.querySelector(href)
 
           if (targetElement) {
-            lenis.scrollTo(targetElement, {
+            lenis.scrollTo(targetElement as HTMLElement, {
               offset: -100, // Account for fixed header
               duration: 1.2,
             })

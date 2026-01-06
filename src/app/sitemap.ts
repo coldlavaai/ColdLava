@@ -4,19 +4,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://coldlava.ai'
 
   // Static pages
-  const staticPages = [
-    '',
-    '/privacy',
-    '/terms',
-    '/cookies',
+  const routes: MetadataRoute.Sitemap = [
+    {
+      url: `${baseUrl}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 1,
+    },
+    {
+      url: `${baseUrl}/privacy`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/terms`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/cookies`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
   ]
 
-  const staticEntries = staticPages.map((page) => ({
-    url: `${baseUrl}${page}`,
-    lastModified: new Date(),
-    changeFrequency: (page === '' ? 'weekly' : 'monthly') as const,
-    priority: page === '' ? 1 : page === '/privacy' || page === '/terms' ? 0.5 : 0.6,
-  }))
-
-  return staticEntries
+  return routes
 }

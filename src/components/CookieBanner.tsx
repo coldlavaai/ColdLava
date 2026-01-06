@@ -23,8 +23,8 @@ export function CookieBanner() {
     setShowBanner(false)
 
     // Initialize analytics if needed
-    if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('consent', 'grant')
+    if (typeof window !== 'undefined' && 'fbq' in window && typeof (window as any).fbq === 'function') {
+      (window as any).fbq('consent', 'grant')
     }
   }
 
@@ -34,8 +34,8 @@ export function CookieBanner() {
     setShowBanner(false)
 
     // Disable analytics
-    if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('consent', 'revoke')
+    if (typeof window !== 'undefined' && 'fbq' in window && typeof (window as any).fbq === 'function') {
+      (window as any).fbq('consent', 'revoke')
     }
   }
 
