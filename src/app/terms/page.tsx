@@ -287,6 +287,42 @@ export default function TermsOfService() {
 
           <Section
             number="11"
+            title="Insurance Coverage"
+            content={
+              <>
+                <p className="mb-4">
+                  Cold Lava maintains comprehensive insurance coverage to protect both our business and our clients:
+                </p>
+                <ul className="space-y-4">
+                  <ListItem>
+                    <strong className="text-white font-semibold">Professional Indemnity Insurance</strong> —
+                    Protects clients against financial losses arising from professional negligence, errors, or omissions
+                    in the delivery of our services. This coverage provides assurance that claims related to the quality
+                    or suitability of our work are backed by appropriate financial protection.
+                  </ListItem>
+                  <ListItem>
+                    <strong className="text-white font-semibold">Cyber & Data Protection Insurance</strong> —
+                    Covers incidents related to data breaches, cyber attacks, and privacy violations. This insurance
+                    ensures that clients are protected in the unlikely event of a security incident affecting data we
+                    process or systems we manage, including notification costs, regulatory fines, and remediation expenses.
+                  </ListItem>
+                  <ListItem>
+                    <strong className="text-white font-semibold">Key Persons Insurance</strong> —
+                    Provides business continuity protection by ensuring that critical operations can continue and client
+                    commitments can be met in the event of unforeseen circumstances affecting key personnel. This
+                    demonstrates our commitment to service continuity and project completion.
+                  </ListItem>
+                </ul>
+                <p className="mt-4 text-white/90">
+                  All policies are maintained with UK-regulated insurers and are reviewed annually to ensure adequate coverage
+                  levels. Insurance certificates are available upon request for client due diligence purposes.
+                </p>
+              </>
+            }
+          />
+
+          <Section
+            number="12"
             title="General"
             content={
               <>
@@ -307,7 +343,7 @@ export default function TermsOfService() {
           />
 
           <Section
-            number="12"
+            number="13"
             title="Website Terms"
             content={
               <>
@@ -338,7 +374,7 @@ export default function TermsOfService() {
           />
 
           <Section
-            number="13"
+            number="14"
             title="Contact"
             content={
               <>

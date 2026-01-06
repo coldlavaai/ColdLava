@@ -158,10 +158,21 @@ export default function PrivacyPolicy() {
             title="Security"
             content={
               <>
-                <p>
+                <p className="mb-4">
                   We use industry-standard security measures. HTTPS everywhere,
                   encrypted databases, access controls, the works. No system is
                   100% secure, but we take it seriously.
+                </p>
+                <p className="mb-4">
+                  <strong className="text-white font-semibold">Cyber & Data Protection Insurance:</strong>{' '}
+                  We maintain comprehensive Cyber & Data Protection insurance with a UK-regulated insurer.
+                  This covers incidents related to data breaches, cyber attacks, and privacy violations, including
+                  notification costs, regulatory fines, and remediation expenses.
+                </p>
+                <p className="text-white/90">
+                  In the unlikely event of a security incident affecting your data, our insurance provides
+                  additional financial protection beyond our technical safeguards. This demonstrates our
+                  commitment to protecting your information both technically and financially.
                 </p>
               </>
             }
