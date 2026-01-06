@@ -64,7 +64,7 @@ export function ProcessSection() {
   }, [startTime, activeStage])
 
   return (
-    <section id="process" ref={sectionRef} className="py-32 border-t border-white/5 relative overflow-hidden">
+    <section id="process" ref={sectionRef} className="py-16 md:py-24 lg:py-32 border-t border-white/5 relative overflow-hidden">
       {/* Grid overlay */}
       <div className="absolute inset-0 opacity-[0.015]" style={{
         backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)',
@@ -78,15 +78,15 @@ export function ProcessSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="mb-16"
+          className="mb-12 md:mb-16"
         >
-          <div className="flex items-center gap-4 mb-4">
-            <div className="h-px w-12 bg-cyan-500/40" />
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/30">
+          <div className="flex items-center gap-3 md:gap-4 mb-3 md:mb-4">
+            <div className="h-px w-8 md:w-12 bg-cyan-500/40" />
+            <p className="font-mono text-[9px] md:text-[10px] uppercase tracking-[0.3em] text-white/30">
               Process / Methodology
             </p>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight">
             No <span className="text-cyan-500">surprises</span>
             <br />
             No black boxes
@@ -94,7 +94,7 @@ export function ProcessSection() {
         </motion.div>
 
         {/* Two-column layout */}
-        <div className="grid lg:grid-cols-[35%_65%] gap-16 items-start">
+        <div className="grid lg:grid-cols-[35%_65%] gap-12 md:gap-16 items-start">
           {/* Left Column - Philosophy & Priorities */}
           <div className="space-y-12">
             {/* Philosophy Box */}
@@ -118,17 +118,17 @@ export function ProcessSection() {
               <div className="absolute bottom-0 left-0 w-5 h-5 border-l-2 border-b-2 border-cyan-500/20" />
               <div className="absolute bottom-0 right-0 w-5 h-5 border-r-2 border-b-2 border-cyan-500/20" />
 
-              <p className="font-mono text-sm md:text-base text-white/50 leading-relaxed">
+              <p className="font-mono text-xs md:text-sm lg:text-base text-white/50 leading-relaxed">
                 Good, fast, cheap. You can only pick two. We optimise for <span className="text-cyan-500/80">good</span>.
               </p>
 
-              {/* Dimension markers */}
-              <div className="absolute -left-4 top-1/2 -translate-y-1/2 flex flex-col items-center gap-1">
+              {/* Dimension markers - Hidden on mobile */}
+              <div className="absolute -left-4 top-1/2 -translate-y-1/2 flex-col items-center gap-1 hidden md:flex">
                 <div className="w-px h-4 bg-cyan-500/20" />
                 <div className="w-2 h-px bg-cyan-500/20" />
                 <div className="w-px h-4 bg-cyan-500/20" />
               </div>
-              <div className="absolute -right-4 top-1/2 -translate-y-1/2 flex flex-col items-center gap-1">
+              <div className="absolute -right-4 top-1/2 -translate-y-1/2 flex-col items-center gap-1 hidden md:flex">
                 <div className="w-px h-4 bg-cyan-500/20" />
                 <div className="w-2 h-px bg-cyan-500/20" />
                 <div className="w-px h-4 bg-cyan-500/20" />
