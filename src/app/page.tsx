@@ -856,10 +856,10 @@ export default function Home() {
       </section>
 
       {/* TESTIMONIALS - Architectural Blueprint */}
-      <section id="clients" className="relative py-32 border-t border-white/5 overflow-hidden">
+      <section id="clients" className="relative py-24 border-t border-white/5 overflow-hidden">
         <div className="container-default">
           {/* Section Header */}
-          <div className="mb-20">
+          <div className="mb-16">
             <div className="flex items-center gap-4 mb-4">
               <div className="h-px w-12 bg-cyan-500/40" />
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/30">
@@ -872,15 +872,15 @@ export default function Home() {
           </div>
 
           {/* Architectural Testimonial Grid */}
-          <div className="grid md:grid-cols-12 gap-6 auto-rows-fr">
+          <div className="grid md:grid-cols-12 gap-5 auto-rows-min">
             {testimonials.map((t, i) => {
               // Architectural layout pattern: varied sizes for visual interest
               const layouts = [
-                'md:col-span-8', // Wide
-                'md:col-span-4', // Narrow
-                'md:col-span-5', // Medium
-                'md:col-span-7', // Medium-wide
-                'md:col-span-12', // Full width
+                'md:col-span-7', // Greenstar
+                'md:col-span-5', // Detail Dynamics
+                'md:col-span-5', // LCB
+                'md:col-span-7', // Upmarket Hotels
+                'md:col-span-12', // Jack Castle - full width
               ]
 
               return (
@@ -894,40 +894,40 @@ export default function Home() {
                     delay: i * 0.1,
                     ease: [0.22, 1, 0.36, 1]
                   }}
-                  className={`group relative ${layouts[i]} h-full`}
+                  className={`group relative ${layouts[i]}`}
                 >
                   {/* Architectural frame */}
-                  <div className="relative h-full bg-white/[0.01] border border-white/5 p-6 md:p-7 hover:border-cyan-500/30 hover:shadow-[0_0_30px_rgba(6,182,212,0.15)] transition-all duration-700">
+                  <div className="relative bg-white/[0.01] border border-white/5 p-5 md:p-6 hover:border-cyan-500/30 hover:shadow-[0_0_30px_rgba(6,182,212,0.15)] transition-all duration-700">
                     {/* Corner brackets */}
-                    <div className="absolute top-0 left-0 w-6 h-6 border-l border-t border-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    <div className="absolute top-0 right-0 w-6 h-6 border-r border-t border-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    <div className="absolute bottom-0 left-0 w-6 h-6 border-l border-b border-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    <div className="absolute bottom-0 right-0 w-6 h-6 border-r border-b border-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute top-0 left-0 w-5 h-5 border-l border-t border-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute top-0 right-0 w-5 h-5 border-r border-t border-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute bottom-0 left-0 w-5 h-5 border-l border-b border-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute bottom-0 right-0 w-5 h-5 border-r border-b border-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                     {/* Testimonial number */}
-                    <div className="absolute -top-3 left-6 bg-black px-2">
+                    <div className="absolute -top-2.5 left-5 bg-black px-2">
                       <span className="font-mono text-[10px] text-cyan-500/60">
                         {String(i + 1).padStart(2, '0')}
                       </span>
                     </div>
 
                     {/* Quote */}
-                    <blockquote className="relative mb-6">
-                      <div className="absolute -left-2 top-0 text-6xl text-cyan-500/10 leading-none font-serif">"</div>
-                      <p className={`relative text-white/70 italic leading-relaxed ${i === 4 ? 'text-xl md:text-2xl' : 'text-lg md:text-xl'}`}>
+                    <blockquote className="relative mb-5">
+                      <div className="absolute -left-2 top-0 text-5xl text-cyan-500/10 leading-none font-serif">"</div>
+                      <p className={`relative text-white/70 italic leading-relaxed pl-4 ${i === 4 ? 'text-lg md:text-xl' : 'text-base md:text-lg'}`}>
                         {t.quote}
                       </p>
                     </blockquote>
 
                     {/* Attribution with architectural line */}
-                    <div className="flex items-center gap-4 mt-auto">
+                    <div className="flex items-center gap-3">
                       <div className="flex-shrink-0 w-1 h-1 bg-cyan-500 rounded-full" />
                       <div className="flex-grow h-px bg-gradient-to-r from-white/10 to-transparent" />
                       <cite className="not-italic flex-shrink-0">
                         <div className="text-right">
-                          <div className="text-cyan-500 font-medium">{t.author}</div>
+                          <div className="text-cyan-500 font-medium text-sm">{t.author}</div>
                           {t.company && (
-                            <div className="text-white/40 font-mono text-xs mt-1">{t.company}</div>
+                            <div className="text-white/40 font-mono text-[10px] mt-0.5">{t.company}</div>
                           )}
                         </div>
                       </cite>
