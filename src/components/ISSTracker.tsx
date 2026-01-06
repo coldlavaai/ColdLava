@@ -3,15 +3,14 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-interface ISSPosition {
-  latitude: string
-  longitude: string
-}
-
 interface ISSResponse {
-  message: string
+  latitude: number
+  longitude: number
+  altitude: number
+  velocity: number
+  id: number
+  name: string
   timestamp: number
-  iss_position: ISSPosition
 }
 
 export function ISSTracker() {
@@ -23,15 +22,25 @@ export function ISSTracker() {
 
     const fetchISSLocation = async () => {
       try {
-        // Get ISS coordinates
-        const issResponse = await fetch('http://api.open-notify.org/iss-now.json')
-        const issData: ISSResponse = await issResponse.json()
-        const { latitude, longitude } = issData.iss_position
+        // Get ISS coordinates (using HTTPS to avoid mixed content blocking)
+        const issResponse = await fetch('https://api.wheretheiss.at/v1/satellites/25544')
+
+        if (!issResponse.ok) {
+          throw new Error(`ISS API returned ${issResponse.status}`)
+        }
+
+        const issData = await issResponse.json()
+        const { latitude, longitude } = issData
 
         // Convert to location name using BigDataCloud
         const geoResponse = await fetch(
           `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`
         )
+
+        if (!geoResponse.ok) {
+          throw new Error(`Geocoding API returned ${geoResponse.status}`)
+        }
+
         const geoData = await geoResponse.json()
 
         // Get the best available name
@@ -45,7 +54,8 @@ export function ISSTracker() {
         setLocation(locationName)
       } catch (error) {
         console.error('Failed to fetch ISS location:', error)
-        setLocation('Location unavailable')
+        // Fallback to coordinates if geocoding fails
+        setLocation('Orbiting Earth')
       }
     }
 
