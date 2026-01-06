@@ -552,7 +552,7 @@ const testimonials = [
   },
   {
     quote: 'Incredibly efficient, knowledgeable, and easy to work with. Delivered everything on time, and often ahead of schedule. The end result far exceeded our expectations.',
-    author: 'Sian',
+    author: 'Jack Castle',
     company: '',
   },
 ]
@@ -1052,7 +1052,7 @@ export default function Home() {
                       <div className="flex-grow h-px bg-gradient-to-r from-white/10 to-transparent" />
                       <cite className="not-italic flex-shrink-0">
                         <div className="text-right">
-                          <div className="text-white/90 font-medium">{t.author}</div>
+                          <div className="text-cyan-500 font-medium">{t.author}</div>
                           {t.company && (
                             <div className="text-white/40 font-mono text-xs mt-1">{t.company}</div>
                           )}
