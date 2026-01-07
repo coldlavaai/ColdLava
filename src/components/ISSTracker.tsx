@@ -48,17 +48,34 @@ export function ISSTracker() {
 
         const geoData = await geoResponse.json()
 
-        // Get the best available location name
+        // Helper to safely extract string values (API sometimes returns empty objects {})
+        const getStringValue = (value: any): string | null => {
+          if (typeof value === 'string' && value.trim().length > 0) {
+            return value.trim()
+          }
+          return null
+        }
+
+        // Get the best available location name from actual API fields
         let locationName = 'International Waters'
 
-        if (geoData.country) {
-          locationName = geoData.country
-        } else if (geoData.suggestion?.region) {
-          locationName = geoData.suggestion.region
-        } else if (geoData.suggestion?.territory) {
-          locationName = geoData.suggestion.territory
-        } else if (geoData.ocean) {
-          locationName = geoData.ocean
+        // Check actual API response fields in priority order
+        const country = getStringValue(geoData.country)
+        const region = getStringValue(geoData.region)
+        const state = getStringValue(geoData.state)
+        const city = getStringValue(geoData.city)
+        const ocean = getStringValue(geoData.ocean)
+
+        if (country) {
+          locationName = country
+        } else if (region) {
+          locationName = region
+        } else if (state) {
+          locationName = state
+        } else if (city) {
+          locationName = city
+        } else if (ocean) {
+          locationName = ocean
         }
 
         setLocation(locationName)
