@@ -268,6 +268,101 @@ Once you complete this questionnaire:
 
 ---
 
+## Section 11: Our Initial Recommendations (Based on Your Current Site Audit)
+
+Below are some initial suggestions based on our full audit of https://lcb-ltd.com/ and the kind of flagship-standard sites we’re now building for clients. These are **for your consideration** only – we’ll refine them together after you’ve completed the questionnaire.
+
+### 11.1 Site Structure & SEO
+
+- Move from a **single-page site** to a **multi-page structure**, so we can:
+  - Give **Brokerage**, **Consultancy**, **Sustainability**, and **Innovation** their own pages
+  - Target specific search terms like “cotton brokerage”, “cotton consultancy”, “sustainable cotton trading” more effectively
+- Proposed core structure:
+  - `Home`
+  - `Brokerage`
+  - `Consultancy`
+  - `Sustainability`
+  - `Innovation`
+  - `Team` / `About`
+  - `Case Studies`
+  - `Insights` (blog/news, optional)
+  - `Contact`
+- Keep navigation simple (no clutter), but give each service room to breathe with deeper content and examples.
+
+### 11.2 Content, Proof & Positioning
+
+- **Keep and refine**:
+  - The existing positioning around “Connecting Global Threads of Opportunity”
+  - The four pillars: Brokerage, Consultancy, Sustainability, Innovation
+  - The strong sustainability story and certifications
+- **Add missing proof elements**:
+  - 3–5 **testimonials** from existing clients (short, outcome-focused)
+  - 2–4 **case studies** that show:
+    - Client type (e.g. spinner, merchant, mill)
+    - Problem
+    - What LCB did (brokerage / consultancy / risk management)
+    - Tangible outcome (e.g. risk reduced, volatility managed, supply secured)
+- **Clarify who you’re for** on each service page:
+  - e.g. “For mills and merchants who…”, “For brands who care about…”.
+
+### 11.3 Contact, Conversion & Trust
+
+- **Make it easier to contact you**:
+  - Add **phone number**, **email address**, and **office address** (where appropriate) to the footer and contact page
+  - Keep the contact form but make it more specific (e.g. “What best describes you?” dropdown)
+- Consider adding:
+  - **Direct booking link** (Cal.com / Calendly) for introductory calls
+  - Clear “next step” per page (e.g. “Request a risk review”, “Book a consultation”, “Discuss sustainable sourcing”)
+- Make trust more explicit:
+  - Pull out credentials like ICA licensing, years of experience, and institutional partnerships into small “trust blocks” near CTAs.
+
+### 11.4 Legal, Compliance & Professionalism
+
+- Add the standard legal pages:
+  - **Privacy Policy**
+  - **Terms & Conditions**
+  - **Cookie Policy**
+- Implement a **cookie consent banner** suitable for UK/EU visitors.
+- Make sure the contact form and any newsletter sign-ups have clear wording around data usage (GDPR-friendly language).
+
+### 11.5 Analytics, Tracking & Insights
+
+- Standardise on a modern analytics stack so you can see exactly how the site is performing:
+  - **Google Analytics 4** for overall traffic and engagement
+  - **LinkedIn Insight Tag** for B2B remarketing
+  - Optional: **Facebook Pixel** and **Microsoft Clarity** (session recordings/heatmaps)
+- Track the key actions:
+  - Contact form submissions
+  - Clicks on email/phone links
+  - Clicks on “I am interested” / “Request a quote” / “Book a call”
+- Give you access to a simple, password-protected **analytics dashboard** (if desired) so you can see what’s happening without logging into multiple tools.
+
+### 11.6 Design, Brand & Visuals
+
+- Keep the existing **color palette** (Teal + Dark Green) and logo as the base.
+- Improve perceived quality by:
+  - Replacing generic **stock imagery** (fields, lightbulbs, business meetings) with:
+    - More specific cotton / supply-chain imagery, and/or
+    - Commissioned or curated images aligned with your brand
+  - Ensuring all images have proper **alt text** for accessibility and SEO
+- Preserve the professional feel, but move to a **cleaner, faster, more minimal layout** with:
+  - Fewer “template” design flourishes
+  - Clear hierarchy (headlines, subheads, short paragraphs, bullets)
+
+### 11.7 Accessibility, Performance & Technical Foundations
+
+- As part of the rebuild we recommend:
+  - Building on a **modern framework** optimised for performance and SEO
+  - Running an **accessibility pass** (alt text, keyboard navigation, contrast)
+  - Running a **performance audit** (Core Web Vitals) to ensure the site loads quickly, especially for international users
+- The aim is to match the standard of a flagship-grade site:
+  - Fast, stable, and easy to maintain
+  - Built to support analytics, legal compliance, and future features (e.g. client portal, resources area)
+
+---
+
+If any of these recommendations don’t match where you want to take the business, we’ll adjust. Your answers to the questions above will determine which of these we prioritise in the first version of the new site.
+
 *Questionnaire tailored for Liverpool Cotton Brokers Ltd*
 *Version 1.0 - 2026-01-07*
 *Created by Cold Lava AI Ltd*
