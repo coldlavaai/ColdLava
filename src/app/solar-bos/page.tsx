@@ -201,7 +201,6 @@ export default function SolarBOSPage() {
       {/* Hero */}
       <section className="relative min-h-[85vh] flex items-center border-b border-white/5 overflow-hidden">
         <GridOverlay spacing={32} opacity={0.015} />
-        <TechnicalLabel position="top-left">Solar BOS · UK</TechnicalLabel>
         <TechnicalLabel position="top-right">v0.1 · Early Access</TechnicalLabel>
         <TechnicalLabel position="bottom-left">MCS · DNO</TechnicalLabel>
         <TechnicalLabel position="bottom-right">Built by Cold Lava</TechnicalLabel>
